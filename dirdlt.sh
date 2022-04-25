@@ -12,7 +12,16 @@
 
 
 ## If you Copy Then Give the credits :))
+clear
+cd ~
+pwd
+ls
+echo -n "Where do u want me to go? look at the Directories above and navigate wherever you want to go: "
+read go1
+clear
+sleep 2
 
+cd $go1
 clear
 pwd
 ls
