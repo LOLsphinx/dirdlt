@@ -35,10 +35,10 @@ pwd
 echo -n "${RESETBG}${WHITE}All Directory: ${BLACKBG}${RED}"[1]goback"${RESETBG}${WHITEBG}${BLACK} " 
 ls
 sleep 1
-echo "${RESETBG}${CYAN}Select an option:${RESETBG}${RED} ${RESETBG}"
+echo -n "${RESETBG}${CYAN}Select an option:${RESETBG}${RED} "
 read lods
 
-sleep 2
+sleep 1
 
 if [ "$lods" = "1" ]
 then
