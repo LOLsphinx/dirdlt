@@ -32,7 +32,7 @@ sleep 2
 cd $go1
 clear
 pwd
-echo -n "${RESETBG}${WHITE}All Directory: ${BLACKBG}${RED}"[1]goback"${RESETBG}${WHITEBG}${BLACK} " 
+echo -n "${RESETBG}${WHITE}All Directory: ${BLACKBG}${RED}"[1]goback"${RESETBG}${BLACKBG}${WHITE} " 
 ls
 sleep 1
 echo -n "${RESETBG}${CYAN}Select an option:${RESETBG}${RED} "
@@ -62,9 +62,9 @@ read fname
 
 if [[ -f "$fname" ]]
 then
-   echo "${RESETBG}${RED}${BLACKBG}     $fname exists..."
+   echo "${RESETBG}${RED}${BLACKBG}$fname exists..."
 else
-    echo "${RESETBG}${BLACKBG}${RED}   $fname doesn't exist.."
+    echo "${RESETBG}${BLACKBG}${RED}$fname doesn't exist.."
     sleep 2
     echo "There's no $fname Directory!"
     sleep 3
