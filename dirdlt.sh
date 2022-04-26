@@ -32,9 +32,12 @@ sleep 2
 cd $go1
 clear
 pwd
-echo -n "${RESETBG}${WHITE}All Directory: ${BLACKBG}${RED}"[1]goback" ${RESETBG}${WHITEBG}${BLACK}" 
-read lods
+echo -n "${RESETBG}${WHITE}All Directory: ${BLACKBG}${RED}"[1]goback"${RESETBG}${WHITEBG}${BLACK} " 
 ls
+sleep 1
+echo "${RESETBG}${CYAN}Select an option:${RESETBG}${RED} ${RESETBG}"
+read lods
+
 sleep 2
 
 if [ "$lods" = "1" ]
