@@ -32,9 +32,27 @@ sleep 2
 cd $go1
 clear
 pwd
-echo -n "${RESETBG}${WHITE}All Directory: ${BLACKBG}${RED}" 
+echo -n "${RESETBG}${WHITE}All Directory: ${BLACKBG}${RED}"[1]goback" ${RESETBG}${WHITEBG}${BLACK}" 
+read lods
 ls
 sleep 2
+
+if [ "$lods" = "1" ]
+then
+sleep 2
+cd
+cd
+fi
+
+if [ "$lods" = "goback" ]
+then
+sleep 2
+cd
+cd
+fi
+
+
+
 
 echo -n "${RESETBG}${CYAN}Enter filename to check: "
 read fname
